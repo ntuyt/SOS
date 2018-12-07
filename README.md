@@ -18,15 +18,14 @@ conda install pytorch torchvision -c pytorch
 
 You need download ModelNet40 dataset
 
-
 with orientation assumption, 6-view settings
 ```
-Give the example
+wget http://www.cim.mcgill.ca/dscnn-data/ModelNet40_rendered_rgb.tar; tar -xvf ModelNet40_rendered_rgb.tar 
 ```
 
 without orientation assumption, 20-view settings
 ```
-until finished
+wget wget https://data.airc.aist.go.jp/kanezaki.asako/data/modelnet40v2png_ori4.tar; tar -xvf modelnet40v2png_ori4.tar
 ```
 
 End with an example of getting some data out of the system or using it for a little demo
