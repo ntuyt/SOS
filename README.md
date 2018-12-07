@@ -25,49 +25,66 @@ wget http://www.cim.mcgill.ca/dscnn-data/ModelNet40_rendered_rgb.tar; tar -xvf M
 
 without orientation assumption, 20-view settings
 ```
-wget wget https://data.airc.aist.go.jp/kanezaki.asako/data/modelnet40v2png_ori4.tar; tar -xvf modelnet40v2png_ori4.tar
+ wget https://data.airc.aist.go.jp/kanezaki.asako/data/modelnet40v2png_ori4.tar; tar -xvf modelnet40v2png_ori4.tar
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
+### Download trained models
+* [cache_model.tar](https://drive.google.com/open?id=1CB01BrLuPBUCNhq9pDiwIyteUecbN8BO)
 
 ```
-Give an example
+ tar -xvf cache_model.tar  
 ```
 
-### And coding style tests
+## Training
 
-Explain what these tests test and why
-
+### 6-view ModelNet40
 ```
-Give an example
+python mainalex.py -d modelnet40 -v 6 
 ```
 
-## Deployment
+### 6-view ModelNet10
+```
+python mainalex.py -d modelnet10 -v 6
+```
 
-Add additional notes about how to deploy this on a live system
+### 20-view ModelNet40
+```
+python mainalex.py -d modelnet40 -v 20
+```
 
-## Built With
+### 20-view ModelNet10
+```
+python mainalex.py -d modelnet10 -v 20
+```
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+## Testing
 
-## Contributing
+### 6-view ModelNet40
+```
+python testalex.py -d modelnet40 -v 6 --resume cache_models/
+```
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+### 6-view ModelNet10
+```
+python testalex.py -d modelnet10 -v 6 --resume cache_models/
+```
 
-## Versioning
+### 20-view ModelNet40
+```
+python testalex.py -d modelnet40 -v 20 --resume cache_models/
+```
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+### 20-view ModelNet10
+```
+python testalex.py -d modelnet10 -v 20 --resume cache_models/
+```
+
+
+
+
+
+
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Tan YU** - [Homepage](https://sites.google.com/site/tanyuspersonalwebsite/home)
