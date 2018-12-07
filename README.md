@@ -5,25 +5,23 @@ SOS: Sequence-of-Sequences Model for 3D Object Recognition
 These instructions will get you a copy of the project up and running on your local machine for training and testing purposes. 
 
 ### Prerequisites
-
-What things you need to install the software and how to install them
+Pytorch
 
 ```
-Give examples
+conda install pytorch torchvision -c pytorch
 ```
 
-### Installing
+### Data Prepare
 
-A step by step series of examples that tell you how to get a development env running
+You need download ModelNet40 dataset
 
-Say what the step will be
 
+with orientation assumption, 6-view settings
 ```
 Give the example
 ```
 
-And repeat
-
+without orientation assumption, 20-view settings
 ```
 until finished
 ```
