@@ -1,6 +1,7 @@
 # SOS: Sequence-of-Sequences Model for 3D Object Recognition
 
 This repository holds the codes and models for the papers
+
 **SOS: Sequence-of-Sequences Model for 3D Object Recognition** Tan Yu, Zhou Ren, Yuncheng Li, Enxu Yan, Ning Xu, Jianxiong Yin, Simon See, Junsong Yuan 
 
 ## Getting Started
