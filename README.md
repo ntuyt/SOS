@@ -37,54 +37,57 @@ without orientation assumption, 20-view settings
 
 ## Training
 
-### 6-view ModelNet40
+6-view ModelNet40
 ```
 python mainalex.py -d modelnet40 -v 6 
 ```
 
-### 6-view ModelNet10
+6-view ModelNet10
 ```
 python mainalex.py -d modelnet10 -v 6
 ```
 
-### 20-view ModelNet40
+20-view ModelNet40
 ```
 python mainalex.py -d modelnet40 -v 20
 ```
 
-### 20-view ModelNet10
+20-view ModelNet10
 ```
 python mainalex.py -d modelnet10 -v 20
 ```
 
 ## Testing
 
-### 6-view ModelNet40
+6-view ModelNet40
 ```
-python testalex.py -d modelnet40 -v 6 --resume cache_models/
-```
-
-### 6-view ModelNet10
-```
-python testalex.py -d modelnet10 -v 6 --resume cache_models/
+python testalex.py -d modelnet40 -v 6 --resume cache_models/alexnet_modelnet40_6view.tar
 ```
 
-### 20-view ModelNet40
+6-view ModelNet10
 ```
-python testalex.py -d modelnet40 -v 20 --resume cache_models/
-```
-
-### 20-view ModelNet10
-```
-python testalex.py -d modelnet10 -v 20 --resume cache_models/
+python testalex.py -d modelnet10 -v 6 --resume cache_models/alexnet_modelnet40_6view.tar
 ```
 
+20-view ModelNet40
+```
+python testalex.py -d modelnet40 -v 20 --resume cache_models/alexnet_modelnet40_6view.tar
+```
 
+20-view ModelNet10
+```
+python testalex.py -d modelnet10 -v 20 --resume cache_models/alexnet_modelnet40_6view.tar
 
-
-
+```
 
 
 ## Authors
+* [Tan Yu](https://sites.google.com/site/tanyuspersonalwebsite/home)
+* [Zhou Ren](http://web.cs.ucla.edu/~zhou.ren/)
+* [Yuncheng Li](http://www.cs.rochester.edu/~yli/)
+* [Enxu Yan](http://ianyen.site/)
+* [Ning Xu](https://www.linkedin.com/in/ningxu01/)
+* [Jianxiong Yin](https://www.linkedin.com/in/jianxiong-yin-3a25541b/)
+* [Simon See](https://www.linkedin.com/in/simonsee/)
+* [Junsong Yuan](https://cse.buffalo.edu/~jsyuan/)
 
-* **Tan YU** - [Homepage](https://sites.google.com/site/tanyuspersonalwebsite/home)
