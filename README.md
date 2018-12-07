@@ -1,7 +1,9 @@
-# Project Title
-SOS: Sequence-of-Sequences Model for 3D Object Recognition
-## Getting Started
+# SOS: Sequence-of-Sequences Model for 3D Object Recognition
 
+This repository holds the codes and models for the papers
+**SOS: Sequence-of-Sequences Model for 3D Object Recognition** Tan Yu, Zhou Ren, Yuncheng Li, Enxu Yan, Ning Xu, Jianxiong Yin, Simon See, Junsong Yuan 
+
+## Getting Started
 These instructions will get you a copy of the project up and running on your local machine for training and testing purposes. 
 
 ### Prerequisites
